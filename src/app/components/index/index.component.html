@@ -1,0 +1,14 @@
+<h1>Linkscode</h1>
+
+<div  *ngIf="tokenGame.token">
+
+  <mat-list *ngFor="let url of tokenGame.token.urls; let i = index">
+
+    <mat-action-list>
+
+      <a target="_bank" mat-list-item style="color:#fff" href="{{ url }}">Parte {{ i+1 }} : {{ url }} <mat-icon>launch</mat-icon> </a>
+
+    </mat-action-list>
+
+  </mat-list>
+</div>
