@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Router } from '@angular/router';
-import { Location } from '@angular/common';
 
 // services
 import { GameService } from '../../services/game.service';
@@ -23,7 +21,6 @@ export class IndexComponent implements OnInit {
   constructor(
     private activatedRoute: ActivatedRoute,
     private gameService: GameService,
-    private location: Location
   ) { }
 
   tokenGame: any = "";

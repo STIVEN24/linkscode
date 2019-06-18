@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class GameService {
 
-  url_api = "http://localhost:3000/api/games/";
+  url_api = "https://gamescodebackend.herokuapp.com/api/games/";
 
   constructor(
     private httpClient: HttpClient
